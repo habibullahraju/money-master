@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-5 font-semibold text-violet-600 ">Money Master!!</h1>
+    </header>
+    <main>
+        <section class="flex px-7 mt-7">
+            <div class="w-[50%]">
+                <img src="https://static6.depositphotos.com/1085342/582/i/950/depositphotos_5821521-stock-photo-accountant-with-money-making-machine.jpg" alt="">
+            </div>
+
+            <div class="bg-gray-100 w-[50%] pb-10" >
+                <h2 class="text-center text-4xl font-semibold text-black underline p-5">Income</h2>
+                <div class="text-center">
+                    <span>Income:</span>
+                <input id="income-field" type="number" class="p-2" min="0" max="10000">
+                </div>
+                <h1 class="text-center text-3xl p-2">Expenses</h1>
+                <div class="text-center m-2">
+                    <span>Food:</span>
+                    <input id="food" type="number" class=" p-2">
+                </div>
+                <div class="text-center m-2">
+                    <span>Rent:</span>
+                    <input id="rent" type="number" class="p-2">
+                </div>
+                <div class="text-center m-2">
+                    <span>Clothes:</span>
+                    <input id="cloths" type="number" class="p-2">
+                </div>
+                <button id="btn-calculate"  class="btn mx-auto block">Calculate</button>
+                <h1 class="text-center text-3xl p-2">Total Expenses:<span id="total-expenses">00</span></h1>
+                <h1 class="text-center text-3xl p-2">Balance:<span id="balance">00</span></h1>
+
+                <div class="text-center">
+                    <span>Save:</span>
+                    <input id="save-field" class="w-20 p-2" type="number">
+                    <span>%</span>
+                    <button id="btn-save"  class="btn mx-auto">Save</button>
+                </div>
+                <h1 class="text-center text-3xl p-2">Saving Amount:<span id="saving-amount">00</span></h1>
+                <h1 class="text-center text-3xl p-2">Remaining Balance:<span id="remaining-total">00</span></h1>
+                
+                
+
+            </div>
+
+        </section>
+    </main>
+    <script src="./js/money.js"></script>
+</body>
+</html>
